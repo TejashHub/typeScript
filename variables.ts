@@ -10,4 +10,14 @@ let userId: number = 33445.6;
 
 let isLoggedIn: boolean = false;
 
+// any
+
+let hero: string;
+
+const getHero = () => {
+  return "thor";
+};
+
+hero = getHero();
+
 export {};

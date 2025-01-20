@@ -6,3 +6,9 @@ var greeting = "Good Everning";
 var userId = 33445.6;
 // boolean
 var isLoggedIn = false;
+// any
+var hero;
+var getHero = function () {
+  return "get hero !!";
+};
+hero = getHero();
