@@ -29,11 +29,19 @@ const getHello = (message: string): string => {
   return message;
 };
 
-const heros: Array<string> = ["Superman", "Batman", "Wonder Woman"];
+const heros: string[] = ["Superman", "Batman", "Wonder Woman"];
 
-heros.map((item: string): string => {
+heros.map((item): string => {
   return `hero name is ${item}`;
 });
+
+const consoleError = (errmsg: string): void => {
+  console.log(errmsg);
+};
+
+const handleError = (errmsg: string): never => {
+  throw new Error(errmsg);
+};
 
 const myvalues = addTwo(3);
 

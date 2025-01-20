@@ -1,33 +1,41 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var add = function (a, b) { return a + b; };
-var addTwo = function (a) { return a + 2; };
-var getUpper = function (a) { return a.toLocaleUpperCase(); };
+var add = function (a, b) {
+  return a + b;
+};
+var addTwo = function (a) {
+  return a + 2;
+};
+var getUpper = function (a) {
+  return a.toLocaleUpperCase();
+};
 var getValue = function (myVal) {
-    if (myVal > 5) {
-        return true;
-    }
-    return "200 ok";
+  if (myVal > 5) {
+    return true;
+  }
+  return "200 ok";
 };
 var signUp = function (name, email, isPaid) {
-    if (isPaid === void 0) { isPaid = false; }
-    return {
-        name: name,
-        email: email,
-        isPaid: isPaid,
-    };
+  if (isPaid === void 0) {
+    isPaid = false;
+  }
+  return {
+    name: name,
+    email: email,
+    isPaid: isPaid,
+  };
 };
 var signIn = function (email) {
-    return {
-        email: email,
-    };
+  return {
+    email: email,
+  };
 };
 var getHello = function (message) {
-    return message;
+  return message;
 };
 var heros = ["Superman", "Batman", "Wonder Woman"];
 heros.map(function (item) {
-    return "hero name is ".concat(item);
+  return "hero name is ".concat(item);
 });
 var myvalues = addTwo(3);
 console.log(heros);
