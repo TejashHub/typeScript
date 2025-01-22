@@ -3,7 +3,7 @@ type User = {
   name: string;
   email: string;
   isActive: boolean;
-  credcardDetails?: number;
+  creditNumber?: number;
 };
 
 let myUser: User = {
@@ -11,9 +11,23 @@ let myUser: User = {
   name: "tejash",
   email: "tejash@gmail.com",
   isActive: true,
-  credcardDetails: 1,
+  creditNumber: 540,
 };
 
 myUser.email = "tejash@info.com";
+myUser.creditNumber = 500;
+
+type cardNumber = {
+  cardNumber: string;
+};
+
+type cardDate = {
+  cardDate: string;
+};
+
+type cardDetails = cardNumber &
+  cardDate & {
+    cvv: number;
+  };
 
 export {};
